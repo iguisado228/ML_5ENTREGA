@@ -3,7 +3,7 @@ require_once("db.php");
 
 $conn = konexioaSortu();
 
-$sql = "SELECT Postua, Dortsala, Izena FROM ml_5entrega";
+$sql = "SELECT Postua, Dortsala, Izena FROM ml_5entrega order by Postua asc";
 $result = $conn->query($sql);
 
 echo "<h3>Pilotoen zerrenda:</h3>";
